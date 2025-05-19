@@ -1,8 +1,11 @@
 import express, { Express, Request, Response} from "express";
-
-const PORT = 8000;
+import cors from "cors";
 
 const app = express();
+const PORT = 8000;
+
+app.use(cors());
+app.use(express.json());
 
 app.get("/", (req, res) => {
     res.send("hello world")
@@ -10,4 +13,4 @@ app.get("/", (req, res) => {
 
 app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`)
-})
+});
