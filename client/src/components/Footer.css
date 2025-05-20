@@ -1,0 +1,38 @@
+.footer {
+  background-color: #f0f0f0; /* グレー系の背景色 */
+  padding: 40px 20px;
+  text-align: center;
+  font-family: sans-serif;
+  margin-top: auto;
+}
+
+.footer .title h3 {
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.footer .summary {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.footer .summary > div {
+  max-width: 250px;
+  text-align: left;
+}
+
+.footer .summary h6 {
+  font-size: 1rem;
+  margin-bottom: 8px;
+  color: #555;
+}
+
+.footer .summary body {
+  display: block;
+  font-size: 0.9rem;
+  color: #666;
+  line-height: 1.5;
+}
